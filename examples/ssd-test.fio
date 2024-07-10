@@ -11,13 +11,13 @@
 # large of a queue depth, so 4 is more representative of normal use.
 #
 [global]
-bs=4k
+bs=1m
 ioengine=libaio
 iodepth=4
 size=10g
 direct=1
 runtime=60
-directory=/mount-point-of-ssd
+directory=/root
 filename=ssd.test.file
 
 [seq-read]
